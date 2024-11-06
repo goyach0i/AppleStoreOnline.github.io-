@@ -63,3 +63,25 @@ function shoppingBox__init() {
 }
 
 shoppingBox__init();
+
+// 슬라이드
+// 왼쪽
+$('.new-product > .list > .left').click(function () {
+  if ($('.new-product > .list > div').css('translate') == '0px') {
+    $('.new-product > .list > div').css('translate', '0px');
+    return false;
+  } else {
+    $('.new-product > .list > div').stop().animate({ translate: '+=500px' }, 0);
+  }
+  console.log($('.new-product > .list > div').css('translate'));
+});
+// 오른쪽
+$('.new-product > .list > .right').click(function () {
+  let count = 0;
+  if ($('.new-product > .list > div').css('translate') == '-3500px') {
+    $('.new-product > .list > div').css('translate', '-3500px');
+    return false;
+  } else {
+    $('.new-product > .list > div').stop().animate({ translate: '-=500px' }, 0);
+  }
+});
