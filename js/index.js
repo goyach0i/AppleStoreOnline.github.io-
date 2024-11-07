@@ -66,73 +66,65 @@ shoppingBox__init();
 
 // 슬라이드
 // 왼쪽
-  $('.new-product > .list > .left').click(function () {
-    if ($('.new-product > .list > div').css('translate') == '0px') {
-      $('.new-product > .list > div').css('translate', '0px');
-      console.log($('.new-product > .list > div').css('translate') == '0px');
-      return false;
-    } else {
-      $('.new-product > .list > div')
-        .stop()
-        .animate({ translate: '+=500px' }, 0);
-    }
-  });
+$('.new-product > .list > .left').click(function () {
+  if ($('.new-product > .list > div').css('translate') == '0px') {
+    $('.new-product > .list > div').css('translate', '0px');
+    console.log($('.new-product > .list > div').css('translate') == '0px');
+    return false;
+  } else {
+    $('.new-product > .list > div').stop().animate({ translate: '+=500px' }, 0);
+  }
+});
 
-  $('.help > .list > .left').click(function () {
-    if ($('.help > .list > div').css('translate') == '0px') {
-      $('.help > .list > div').css('translate', '0px');
-      console.log($('.help > .list > div').css('translate') == '0px');
-      return false;
-    } else {
-      $('.help > .list > div').stop().animate({ translate: '+=400px' }, 0);
-    }
-  });
+$('.help > .list > .left').click(function () {
+  if ($('.help > .list > div').css('translate') == '0px') {
+    $('.help > .list > div').css('translate', '0px');
+    console.log($('.help > .list > div').css('translate') == '0px');
+    return false;
+  } else {
+    $('.help > .list > div').stop().animate({ translate: '+=400px' }, 0);
+  }
+});
 
-  $('.apple-store > .list > .left').click(function () {
-    if ($('.apple-store > .list > div').css('translate') == '0px') {
-      $('.apple-store > .list > div').css('translate', '0px');
-      return false;
-    } else {
-      $('.apple-store > .list > div')
-        .stop()
-        .animate({ translate: '+=400px' }, 0);
-    }
-    console.log($('.apple-store > .list > div').css('translate'));
-  });
+$('.apple-store > .list > .left').click(function () {
+  if ($('.apple-store > .list > div').css('translate') == '0px') {
+    $('.apple-store > .list > div').css('translate', '0px');
+    return false;
+  } else {
+    $('.apple-store > .list > div').stop().animate({ translate: '+=400px' }, 0);
+  }
+  console.log($('.apple-store > .list > div').css('translate'));
+});
 
 // 오른쪽
-  $('.new-product > .list > .right').click(function () {
-    if ($('.new-product > .list > div').css('translate') == '-3500px') {
-      $('.new-product > .list > div').css('translate', '-3500px');
-      return false;
-    } else {
-      $('.new-product > .list > div')
-        .stop()
-        .animate({ translate: '-=500px' }, 0);
-    }
-  });
+$('.new-product > .list > .right').click(function () {
+  if ($('.new-product > .list > div').css('translate') == '-3500px') {
+    $('.new-product > .list > div').css('translate', '-3500px');
+    return false;
+  } else {
+    $('.new-product > .list > div').stop().animate({ translate: '-=500px' }, 0);
+  }
+});
 
-  $('.help > .list > .right').click(function () {
-    if ($('.help > .list > div').css('translate') == '-400px') {
-      $('.help > .list > div').css('translate', '-400px');
-      return false;
-    } else {
-      $('.help > .list > div').stop().animate({ translate: '-=400px' }, 0);
-      console.log($('.help > .list > div').css('translate'));
-    }
-  });
+$('.help > .list > .right').click(function () {
+  if ($('.help > .list > div').css('translate') == '-400px') {
+    $('.help > .list > div').css('translate', '-400px');
+    return false;
+  } else {
+    $('.help > .list > div').stop().animate({ translate: '-=400px' }, 0);
+    console.log($('.help > .list > div').css('translate'));
+  }
+});
 
-  $('.apple-store > .list > .right').click(function () {
-    if ($('.apple-store > .list > div').css('translate') == '-400px') {
-      $('.apple-store > .list > div').css('translate', '-400px');
-      return false;
-    } else {
-      $('.apple-store > .list > div')
-        .stop()
-        .animate({ translate: '-=400px' }, 0);
-      console.log($('.apple-store > .list > div').css('translate'));
-    }
-  });
+$('.apple-store > .list > .right').click(function () {
+  if ($('.apple-store > .list > div').css('translate') == '-400px') {
+    $('.apple-store > .list > div').css('translate', '-400px');
+    return false;
+  } else {
+    $('.apple-store > .list > div').stop().animate({ translate: '-=400px' }, 0);
+    console.log($('.apple-store > .list > div').css('translate'));
+  }
+});
 
 // 도움의 손길 팝업
 function Popup__init() {
