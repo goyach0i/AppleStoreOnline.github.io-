@@ -6,12 +6,14 @@ function subMenu__init() {
     let $this = $(this);
     $this.addClass('active');
     $this.find(' > .sub-menu').stop().slideDown(300);
+    $('section').css('filter', 'blur(50px)');
   });
 
   $('.menu-li').mouseleave(function () {
     let $this = $(this);
     $this.removeClass('active');
     $this.find(' > .sub-menu').stop().slideUp(300);
+    $('section').css('filter', 'none');
   });
 }
 
